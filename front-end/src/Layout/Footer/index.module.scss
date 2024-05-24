@@ -1,0 +1,28 @@
+.footer {
+  margin: 100px auto;
+  > div {
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+
+    @media(max-width:992px){
+        grid-template-columns:  auto auto;
+    }
+    @media(max-width:768px){
+        grid-template-columns:   auto;
+
+    }
+  }
+  p {
+    color: #777777;
+    padding: 4px 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 4px 0;
+      color: #777777;
+    }
+  }
+}

@@ -29,7 +29,7 @@ const WishList = () => {
         },
     
     ];
-    
+     
     const handleDelete = (id) => {
         const filtered = wishList.filter((x) => x._id != id)
         setWishList(filtered)
