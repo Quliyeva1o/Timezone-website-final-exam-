@@ -1,0 +1,69 @@
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 24px;
+  }
+  p {
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 18px;
+    font-weight: 500;
+  }
+  img {
+    width: 100%;
+  }
+  > div {
+    position: relative;
+    padding: 20px;
+    &:hover button{
+        display: inline-block
+    }
+    &:hover a{
+        display:inline-block
+    }
+  }
+  button,
+  a{
+    left: 10px;
+    position: absolute;
+    display: none;
+    color: red;
+  }
+  a{
+    left: 90px;
+  }
+  button:nth-child(2){
+    right: 0;
+  }
+}
+.textContent {
+  margin-top: 150px;
+  h1 {
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Roboto";
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

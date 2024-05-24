@@ -1,0 +1,43 @@
+.NewArrivals {
+  margin-top: 200px;
+  h1 {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .cards {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    @media(max-width:992px){
+        grid-template-columns:  auto auto;
+    }
+    @media(max-width:768px){
+        grid-template-columns:   auto;
+
+    }
+    div {
+      h5 {
+        margin-top: 30px;
+        color: #444444;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+        font-size: 24px;
+        text-align: center;
+        
+      }
+      span{
+        color: red;
+        text-align: center;
+        display: block;
+        font-weight: 600;
+        font-family: "Josefin Sans";
+
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
